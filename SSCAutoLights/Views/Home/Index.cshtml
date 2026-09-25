@@ -1,0 +1,304 @@
+﻿@{
+    ViewData["Title"] = "SSC Auto Lights";
+}
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            OEM AUTOMOTIVE LIGHTING
+        </span>
+
+        <h1>
+            We Buy OEM Headlight Cores<br />
+            & Supply OEM Replacements
+        </h1>
+
+        <p>
+            SSC Auto Lights works with automotive professionals to purchase
+            used and damaged OEM headlight cores. We also provide restored
+            OEM replacement headlights that are carefully inspected before
+            being offered for use.
+        </p>
+
+        <div class="hero-actions">
+            <a asp-controller="Home"
+               asp-action="Contact"
+               class="about-button">
+                Sell Your Headlights
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHAT WE BUY
+========================= -->
+<section class="what-we-do">
+
+    <div class="what-we-do-header">
+
+        <span>OEM PARTS WE PURCHASE</span>
+
+        <h2>Parts We're Looking For</h2>
+
+        <p>
+            Have used or damaged OEM automotive parts taking up space?
+            SSC Auto Lights purchases selected lighting and electronic
+            components from body shops, collision centers, dealers,
+            recyclers, and other automotive businesses.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         CORE TYPE TABS
+    ========================= -->
+    <div class="core-tabs">
+
+        <button type="button"
+                class="core-tab active"
+                data-core="headlights">
+            Headlights
+        </button>
+
+        <button type="button"
+                class="core-tab"
+                data-core="taillights">
+            Tail lights
+        </button>
+
+        <button type="button"
+                class="core-tab"
+                data-core="mirrors">
+            Side Mirrors
+        </button>
+
+        <button type="button"
+                class="core-tab"
+                data-core="radar">
+            Front Radar Modules
+        </button>
+
+        <button type="button"
+                class="core-tab"
+                data-core="blindspot">
+            Blind Spot Modules
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         SELECTED CORE DISPLAY
+    ========================= -->
+    <div class="core-display">
+
+        <div class="core-image">
+
+            <img id="coreImage"
+                 src="/images/headlight.png"
+                 alt="OEM Headlight" />
+
+        </div>
+
+
+        <div class="core-info">
+
+            <h3 id="coreTitle">
+                OEM Headlights
+            </h3>
+
+            <div class="core-detail">
+
+                <strong>ACCEPTED:</strong>
+
+                <span id="coreAccepted">
+                    Most makes and models
+                </span>
+
+            </div>
+
+
+            <div class="core-detail">
+
+                <strong>TYPE:</strong>
+
+                <span id="coreType">
+                    LED, Xenon HID, and Halogen
+                </span>
+
+            </div>
+
+
+            <div class="core-detail">
+
+                <strong>CONDITION:</strong>
+
+                <span id="coreCondition">
+                    Used headlights and units with broken tabs,
+                    damaged housings, cracked lenses, or other
+                    damage may be considered.
+                </span>
+
+            </div>
+
+
+            <div class="core-detail">
+
+                <strong>HOW TO START:</strong>
+
+                <span id="coreNote">
+                    Send us photos and information about the
+                    parts you have and our team can review them.
+                </span>
+
+            </div>
+
+
+            <a asp-controller="Home"
+               asp-action="Contact"
+               class="about-button">
+                Sell Us Your Parts
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY WORK WITH SSC
+========================= -->
+<section class="why-ssc">
+
+    <div class="why-ssc-overlay"></div>
+
+    <div class="why-ssc-content">
+
+        <div class="why-ssc-header">
+
+            <span>THE SSC AUTO LIGHTS DIFFERENCE</span>
+
+            <h2>
+                Built Around <strong>OEM Automotive Parts</strong>
+            </h2>
+
+            <p>
+                From purchasing damaged cores to supplying restored
+                headlights, our goal is to make working with OEM
+                automotive lighting simple and straightforward.
+            </p>
+
+        </div>
+
+
+        <div class="why-ssc-cards">
+
+            <!-- CARD 1 -->
+            <div class="why-card">
+
+                <div class="why-number">01</div>
+
+                <img src="/images/network.png"
+                     class="why-icon-img"
+                     alt="Automotive Partners" />
+
+                <h3>Automotive Partners</h3>
+
+                <p>
+                    We work with body shops, collision centers,
+                    dealers, recyclers, and other automotive
+                    businesses looking to sell OEM parts.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="why-card">
+
+                <div class="why-number">02</div>
+
+                <img src="/images/expertise.png"
+                     class="why-icon-img"
+                     alt="OEM Focus" />
+
+                <h3>Focused on OEM</h3>
+
+                <p>
+                    Our business is centered around genuine OEM
+                    automotive lighting and selected electronic
+                    components from a variety of vehicle brands.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="why-card">
+
+                <div class="why-number">03</div>
+
+                <img src="/images/eco.png"
+                     class="why-icon-img"
+                     alt="Parts Reuse" />
+
+                <h3>Giving Parts Another Life</h3>
+
+                <p>
+                    Used and damaged components can still have value.
+                    Purchasing cores allows suitable OEM parts and
+                    materials to be recovered instead of simply discarded.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="why-card">
+
+                <div class="why-number">04</div>
+
+                <img src="/images/quality.png"
+                     class="why-icon-img"
+                     alt="Quality Standards" />
+
+                <h3>Quality Comes First</h3>
+
+                <p>
+                    Restored headlights are carefully inspected with
+                    attention to condition, appearance, and overall
+                    quality before being offered as replacements.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="why-ssc-action">
+
+            <a asp-controller="Home"
+               asp-action="Contact"
+               class="about-button">
+                Work With SSC Auto Lights
+            </a>
+
+        </div>
+
+    </div>
+
+</section>

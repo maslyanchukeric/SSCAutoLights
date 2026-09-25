@@ -1,0 +1,302 @@
+﻿@model SSCAutoLights.Models.ContactForm
+
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<!-- =========================
+     CONTACT HERO
+========================= -->
+<section class="contact-hero">
+
+    <div class="contact-hero-overlay"></div>
+
+    <div class="contact-hero-content">
+
+        <span>CONTACT SSC AUTO LIGHTS</span>
+
+        <h1>
+            Contact <strong>Us</strong>
+        </h1>
+
+        <p>
+            Have OEM parts to sell or need an OEM replacement?
+            Send us the details and our team will get in touch.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT MAIN SECTION
+========================= -->
+<section class="contact-main">
+
+    <div class="contact-grid">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-details">
+
+            <span class="contact-label">
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                Have OEM Parts<br />
+                <strong>To Sell?</strong>
+            </h2>
+
+            <p class="contact-description">
+                SSC Auto Lights purchases used and damaged OEM headlights
+                and selected automotive components. Tell us what you have
+                and send photos so our team can review the parts.
+            </p>
+
+
+            <!-- PHONE -->
+            <div class="contact-item">
+
+                <div class="contact-item-icon">
+                    ☎
+                </div>
+
+                <div>
+                    <span>PHONE NUMBER</span>
+                    <a href="tel:8645550147">
+                        (864) 256-6857
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="contact-item">
+
+                <div class="contact-item-icon">
+                    ✉
+                </div>
+
+                <div>
+                    <span>EMAIL ADDRESS</span>
+                    <a href="mailto:Sscautolights@gmail.com">
+                        Sscautolights@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE AREA -->
+            <div class="contact-item">
+
+                <div class="contact-item-icon">
+                    ⌖
+                </div>
+
+                <div>
+                    <span>SERVICE AREA</span>
+                    <p>Spartanburg, SC & Nationwide</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-form-card">
+
+            <span class="contact-label">
+                SEND US YOUR PARTS
+            </span>
+
+            <h2>Request a Review</h2>
+
+            <p>
+                Fill out the information below and we'll review
+                what you have.
+            </p>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">
+                    <strong>Thank you!</strong> Your information has been sent.<br />
+                    SSC Auto Lights will review your parts and contact you soon.
+                </div>
+            }
+
+            <form asp-controller="Home"
+                  asp-action="Contact"
+                  method="post">
+
+                <!-- NAME -->
+                <div class="contact-form-row">
+
+                    <div class="contact-field">
+
+                        <label for="fullName">
+                            Full Name *
+                        </label>
+
+                        <input type="text"
+                               id="fullName"
+                               name="fullName"
+                               placeholder="Your name"
+                               required />
+
+                    </div>
+
+
+                    <div class="contact-field">
+
+                        <label for="company">
+                            Company Name
+                        </label>
+
+                        <input type="text"
+                               id="company"
+                               name="company"
+                               placeholder="Company (optional)" />
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE + EMAIL -->
+                <div class="contact-form-row">
+
+                    <div class="contact-field">
+
+                        <label for="phone">
+                            Phone Number *
+                        </label>
+
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               placeholder="(864) 555-5555"
+                               required />
+
+                    </div>
+
+
+                    <div class="contact-field">
+
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="you@example.com"
+                               required />
+
+                    </div>
+
+                </div>
+
+
+                <!-- PART TYPE -->
+                <div class="contact-field">
+
+                    <label for="partType">
+                        What Do You Have?
+                    </label>
+
+                    <select id="partType"
+                            name="partType">
+
+                        <option value="">
+                            Select a part type
+                        </option>
+
+                        <option value="headlight">
+                            Headlights
+                        </option>
+
+                        <option value="taillight">
+                            Taillights
+                        </option>
+
+                        <option value="mirror">
+                            Side Mirrors
+                        </option>
+
+                        <option value="radar">
+                            Front Radar Modules
+                        </option>
+
+                        <option value="blindspot">
+                            Blind Spot Modules
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+                <div class="contact-field">
+
+                    <label for="quantity">
+                        Quantity
+                    </label>
+
+                    <select id="quantity"
+                            name="quantity">
+
+                        <option value="">
+                            Select quantity
+                        </option>
+
+                        <option value="1-5">1 - 5</option>
+
+                        <option value="6-10">6 - 10</option>
+
+                        <option value="11-25">11 - 25</option>
+
+                        <option value="26+">26+</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- INFORMATION -->
+                <div class="contact-field">
+
+                    <label for="partInfo">
+                        Vehicle / Part Information
+                    </label>
+
+                    <textarea id="partInfo"
+                              name="partInfo"
+                              rows="5"
+                              placeholder="Year, make, model, part number, condition, and any other information..."></textarea>
+
+                </div>
+
+                <!-- BUTTON -->
+                <button type="submit"
+                        class="contact-submit">
+
+                    Send Your Parts
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
