@@ -6,7 +6,7 @@ The website was built to provide customers and automotive businesses with inform
 
 ## 🌐 Live Website
 
-[Visit SSC Auto Lights]([(https://sscautolights20260925115304-eycjadhwd4hhgma6.westus3-01.azurewebsites.net/)])
+[Visit SSC Auto Lights](https://sscautolights20260925115304-eycjadhwd4hhgma6.westus3-01.azurewebsites.net/)
 
 ## 🚗 About the Project
 
