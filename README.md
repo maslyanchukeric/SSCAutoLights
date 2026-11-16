@@ -11,7 +11,7 @@ SSC Auto Lights is a professional business website built using ASP.NET Core MVC.
 
 The website focuses on showcasing the company's services, explaining the OEM automotive components they work with, and providing customers with an easy way to contact the business.
 
-This is a live production website developed and deployed for a real business.
+The website was developed for a real business and previously deployed to Microsoft Azure. It is now kept as a completed portfolio project.
 
 ## ✨ Features
 
@@ -52,9 +52,9 @@ The application follows the ASP.NET Core MVC architecture:
 
 ## 🚀 Deployment
 
-The website has been deployed to a production environment and is publicly accessible online.
+The website was previously deployed to Microsoft Azure App Service. Hosting has since been discontinued, and the project is retained for portfolio purposes.
 
-**Status:** 🟢 Live
+**Status:** Completed project — not currently hosted
 
 ## 👨‍💻 Developer
 
