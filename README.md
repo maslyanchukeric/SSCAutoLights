@@ -4,9 +4,6 @@ A production business website developed for **SSC Auto Lights**, an automotive c
 
 The website was built to provide customers and automotive businesses with information about SSC Auto Lights' services and make it easy to contact the company.
 
-## 🌐 Live Website
-
-[Visit SSC Auto Lights](https://sscautolights20260925115304-eycjadhwd4hhgma6.westus3-01.azurewebsites.net/)
 
 ## 🚗 About the Project
 
